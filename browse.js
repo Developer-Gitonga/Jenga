@@ -1,19 +1,19 @@
-startImageTransition();
-function startImageTransition() {
-  const images = document.getElementsByClassName("test");
 
-  for (const i = 0; i < images.length; i++) {
+function startImageTransition() {
+  var images = document.getElementsByClassName("test");
+
+  for (var i = 0; i < images.length; i++) {
     images[i].style.opacity = 1;
   }
 
-  const top = 1;
+  var top = 1;
 
-  const cur = images.length - 1;
+  var cur = images.length - 1;
 
   setInterval(changeImage, 3000);
 
   async function changeImage() {
-    const nextImage = (1 + cur) % images.length;
+    var nextImage = (1 + cur) % images.length;
 
     images[cur].style.zIndex = top + 1;
     images[nextImage].style.zIndex = top;
@@ -33,10 +33,19 @@ function startImageTransition() {
 
   function transition(){
       return new Promise(function (resolve, reject){
-          const del = 0.01;
-          const id = setInterval(changeOpacity, 10);
+          var del = 0.01;
+          var id = setInterval(changeOpacity, 10);
 
-          function changeOpacity() {}
-      }
+          function changeOpacity() {
+              images[cur].style.opacity -= del;
+              if (images[cur].style.opacity <= 0) {
+                  clearInterval(id);
+                  resolve();
+              }
+          }
+      });
   }
+  startImageTransition();
 }
+
+
