@@ -13,11 +13,21 @@ function startImageTransition() {
   setInterval(changeImage, 3000);
 
   async function changeImage() {
-      const nextImage = (1 + cur) % images.length;
+    const nextImage = (1 + cur) % images.length;
 
-      images[cur].style.zIndex =top +1;
-      images[nextImage].style.zIndex = top;
+    images[cur].style.zIndex = top + 1;
+    images[nextImage].style.zIndex = top;
 
-      await transition();
+    await transition();
+
+    images[cur].style.zIndex = top;
+
+    images[nextImage].style.zIndex = top + 1;
+
+    top = top + 1;
+
+    images[cur].style.opacity = 1;
+
+    cur = nextImage;
   }
 }
