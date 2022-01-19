@@ -30,4 +30,8 @@ function startImageTransition() {
 
     cur = nextImage;
   }
+
+  function transition(){
+      
+  }
 }
