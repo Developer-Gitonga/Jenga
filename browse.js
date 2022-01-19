@@ -1,51 +1,26 @@
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// function startImageTransition() {
-//   var images = document.getElementsByClassName("test");
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-//   for (var i = 0; i < images.length; i++) {
-//     images[i].style.opacity = 1;
-//   }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-//   var top = 1;
-
-//   var cur = images.length - 1;
-
-//   setInterval(changeImage, 3000);
-
-//   async function changeImage() {
-//     var nextImage = (1 + cur) % images.length;
-
-//     images[cur].style.zIndex = top + 1;
-//     images[nextImage].style.zIndex = top;
-
-//     await transition();
-
-//     images[cur].style.zIndex = top;
-
-//     images[nextImage].style.zIndex = top + 1;
-
-//     top = top + 1;
-
-//     images[cur].style.opacity = 1;
-
-//     cur = nextImage;
-//   }
-
-//   function transition(){
-//       return new Promise(function (resolve, reject){
-//           var del = 0.01;
-//           var id = setInterval(changeOpacity, 10);
-
-//           function changeOpacity() {
-//               images[cur].style.opacity -= del;
-//               if (images[cur].style.opacity <= 0) {
-//                   clearInterval(id);
-//                   resolve();
-//               }
-//           }
-//       });
-//   }
-//   startImageTransition();
-// }
-
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
