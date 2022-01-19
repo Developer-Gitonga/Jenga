@@ -4,20 +4,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="login.css"type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="login.css" rel="stylesheet" type="text/css">
+  <script src="login.js"></script>
   <title>Document</title>
 </head>
 <header>
+  <a class="brand" href="#">ᒍEᑎGᗩ</a>
   <nav>
      <ul class="none">
-       <a href="#"><li>Home</li></a>
-       <a href="#"><li>Browse Homes</li></a>
-       <a href="login.html"><li>Login</li></a>
-       <a href="#"><li>Contacts</li></a>
+        <a href="index.html"><li>Home</li></a>
+        <a href="browseplan.html"><li>Browse Homes</li></a>
+
+        <li class="nav-bar">
+          <a class="nav-link disabled" >Login</a>
+        </li>
+        <a href="login.html"><li>Contacts</li></a>
      </ul>
   </nav>
 </header>
 <body>
-  
+  <section><br><br>
+   <div class="container">
+    <h1 >Log In</h1>
+    <p>Log in to access your previous plans and checkout <br>our new plans and offers as well.</p>
+
+    <div class="con">
+      <form class="myform">
+
+        <div class="form-outline">
+          <label class="form-label" for="typeEmail">Email</label>
+          <input type="email" id="typeEmail" class="form-control" />
+        
+        </div>
+        <div class="form-outline">
+          <label class="form-label" for="typePassword">Password </label>
+          <input type="password" id="typePassword" class="form-control" />
+        
+        </div><br>
+        <div class="col-sm-10">
+            <button onclick="validateInput()" class="btn btn-primary">Log In</button>
+        </div> <br>
+        <div class="col-sm-10">
+           <button type="submit" class="btn btn-primary">Sign Up</button>
+         </div>
+       
+      </form>
+      
+    </div>
+    </div>
+  </section><br><br><br><br><br>
+  <footer class="line">
+    <div class="foot">
+      <div class="row"><br>
+        <div class="col-sm-12 col-md-6">
+          <h2>ᒍEᑎGᗩ</h2><br>
+          <p>Start with our house plans and build your home <br>in stages and managing your site.</p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h2>Quick Links</h2><br>
+          <ul class="vertical">
+            <a href="index.html"><li>Home</li></a>
+            <a href="browseplan.html"><li>Browse Homes</li></a>
+            <a href="login.html"><li>Login</li></a>
+            <a href="contacts.html"><li>Contacts</li></a>
+          </ul>
+        </div>
+       </div>
+    </div>
+    
+  </footer>
+  <script src="login.js"></script>
 </body>
+
 </html>
