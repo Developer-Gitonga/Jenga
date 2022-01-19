@@ -32,6 +32,11 @@ function startImageTransition() {
   }
 
   function transition(){
-      
+      return new Promise(function (resolve, reject){
+          const del = 0.01;
+          const id = setInterval(changeOpacity, 10);
+
+          function changeOpacity() {}
+      }
   }
 }
