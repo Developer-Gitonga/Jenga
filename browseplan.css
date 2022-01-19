@@ -5,6 +5,7 @@
 
 .card {
   width: 300px;
+  margin-left: 50px;
 }
 
 .card img {
@@ -17,6 +18,10 @@
   transform: scale(1.3);
 }
 
-.fas{
-    margin-right:85px;
+.fas {
+  margin-right: 85px;
+}
+
+.row {
+  justify-content: space-between;
 }
