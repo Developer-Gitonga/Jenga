@@ -1,7 +1,7 @@
 *body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
@@ -17,7 +17,7 @@ body {
   font-family: sans-serif;
   font-family: 20px;
   background-color: white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul {
