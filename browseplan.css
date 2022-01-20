@@ -4,6 +4,55 @@
   overflow-x: hidden;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:ital,wght@0,300;1,200&family=Roboto:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: sans-serif;
+  font-family: 20px;
+  background-color: white;
+  overflow-x: hidden;
+}
+ul{
+  border: 2px solid transparent;
+}
+
+.brand{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+header{
+  display:-webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  background-color:#010526;
+  text-decoration: none;
+}
+.none li{
+  display: inline-block;
+  padding:0px 15px;
+  flex-direction: row-reverse;
+  font-family:cursive;
+  color: white;
+}
+.none {
+  list-style: none;
+}
+.none a li{
+  transition: .3s;
+  color: white;
+}
 .moja{
    background-color: whitesmoke;
 }
