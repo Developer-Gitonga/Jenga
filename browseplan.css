@@ -4,7 +4,6 @@
   overflow-x: hidden;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:ital,wght@0,300;1,200&family=Roboto:wght@300&display=swap');
 *{
@@ -38,6 +37,9 @@ header{
   padding:20px;
   background-color:#010526;
   text-decoration: none;
+}
+nav ul a{
+  text-decoration: none
 }
 .none li{
   display: inline-block;
