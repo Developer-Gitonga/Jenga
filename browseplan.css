@@ -85,6 +85,7 @@ nav ul a {
 .card {
   width: 300px;
   margin-left: 50px;
+  margin-top:10px;
 }
 
 .card img {
