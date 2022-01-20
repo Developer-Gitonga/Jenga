@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.moja{
+   background-color:#f4f6fc;
+}
+
 #one{
     height:1500px;
 }
@@ -11,9 +15,10 @@
     height:750px;
 }
 
-.container h1 {
+.title h1 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600px;
+  text-align: center;
 }
 
 .lead {
