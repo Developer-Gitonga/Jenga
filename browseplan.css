@@ -1,7 +1,8 @@
 *body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
@@ -106,6 +107,13 @@ nav ul a {
 }
 
 @media only screen and (max-width: 600px) {
+  *body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .title h1 {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600px;
@@ -120,5 +128,14 @@ nav ul a {
     text-align: center;
     font-size: 15px;
     margin-right: 60px;
+  }
+
+  .card {
+    width: 300px;
+    margin-right: 50px;
+  }
+
+  #one {
+    height: 3000px;
   }
 }
