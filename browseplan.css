@@ -6,17 +6,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:ital,wght@0,300;1,200&family=Roboto:wght@300&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
+
 body{
   font-family: sans-serif;
   font-family: 20px;
   background-color: white;
   overflow-x: hidden;
 }
+
 ul{
   border: 2px solid transparent;
 }
@@ -26,6 +29,7 @@ ul{
   text-decoration: none;
   color: white;
 }
+
 header{
   display:-webkit-flex;
   display: -moz-flex;
@@ -38,9 +42,11 @@ header{
   background-color:#010526;
   text-decoration: none;
 }
+
 nav ul a{
   text-decoration: none
 }
+
 .none li{
   display: inline-block;
   padding:0px 15px;
@@ -48,9 +54,11 @@ nav ul a{
   font-family:cursive;
   color: white;
 }
+
 .none {
   list-style: none;
 }
+
 .none a li{
   transition: .3s;
   color: white;
@@ -62,10 +70,6 @@ nav ul a{
 #one{
     height:1500px;
 }
-
-/* .container {
-    height:750px;
-} */
 
 .title h1 {
   font-family: 'Nunito Sans', sans-serif;
