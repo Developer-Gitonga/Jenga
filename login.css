@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lobster&family=PT+Serif&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: sans-serif;
+  font-family: 20px;
+  background-color: white;
+  overflow-x: hidden;
+  
+
+}
+
+ul{
+  border: 2px solid transparent;
+  
+}
+header{
+  display:-webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  background-color:#010526;
+  text-decoration: none;
+  
+}
+.none li{
+  display: inline-block;
+  padding:0px 15px;
+  flex-direction: row-reverse;
+  font-family:cursive;
+  color: white;
+  
+}
+.none {
+  list-style: none;
+}
+
+.none a li{
+  transition: .3s;
+  color: white;
+}
+.brand{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+/*.brand a{
+  text-decoration: none;
+  transition: .3s;
+  color: white;
+}*/
+.container h1{
+  color: black;
+  text-align: center;
+}
+.container p{
+  color: black;
+  text-align: center;
+} 
+.con{
+  border: 15px solid #010526;
+  padding: 20px;
+}
+.branding{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  margin-left: 30px;
+
+}
+.line{
+ background-color: #010526;
+  height: 250px;
+  width: 100%;
+}
+.line h2,p{
+   color: white;
+}
+.vertical a{
+  list-style: none;
+  text-decoration: none;
+}
+.vertical li{
+  
+  color: white;
+}
